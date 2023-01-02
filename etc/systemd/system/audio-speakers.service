@@ -1,0 +1,9 @@
+[Unit]
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/audio-speakers.sh
+
+[Install]
+WantedBy=default.target
+
