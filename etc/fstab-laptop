@@ -1,0 +1,13 @@
+/dev/system/root  		/                       btrfs  	defaults       	               	0  0
+/dev/system/root  		/var                    btrfs  	subvol=/@/var    		0  0
+/dev/system/root  		/usr/local              btrfs  	subvol=/@/usr/local           	0  0
+/dev/system/root  		/srv                    btrfs  	subvol=/@/srv                 	0  0
+/dev/system/root  		/root                   btrfs  	subvol=/@/root                	0  0
+/dev/system/root  		/opt                    btrfs  	subvol=/@/opt                 	0  0
+/dev/system/home  		/home                   btrfs  	defaults                      	0  0
+/dev/system/root  		/boot/grub2/x86_64-efi  btrfs  	subvol=/@/boot/grub2/x86_64-efi 0  0
+/dev/system/root  		/boot/grub2/i386-pc     btrfs  	subvol=/@/boot/grub2/i386-pc  	0  0
+UUID=C2E8-92FE    		/boot/efi               vfat   	utf8                          	0  2
+/dev/system/swap  		swap                    swap   	defaults                      	0  0
+/dev/system/root  		/.snapshots             btrfs  	subvol=/@/.snapshots          	0  0
+192.168.1.185:/volume1/Backup	/nas/backup		nfs	rw,noauto,user,nofail		0  0
