@@ -2,11 +2,18 @@ if status is-interactive
     # Commands to run in interactive sessions can go here
 end
 
+### autojump source
+if test -f /home/giles/.autojump/share/autojump/autojump.fish; . /home/giles/.autojump/share/autojump/autojump.fish; end
+
 ### set environment variables
 # export ZYPP_MEDIANETWORK=1				# zypper speed up 
 # export QT_QPA_PLATFORMTHEME=qt5ct
 export HISTCONTROL=ignoreboth       			# remove duplicates in command history
-fish_add_path path /home/giles/.config/emacs.d/bin/	# emacs config directory
+set fish_prompt_pwd_dir_length 0			# expand full path in prompt
+
+### set paths
+fish_add_path path /home/giles/.emacs.d/bin/		# emacs config directory
+fish_add_path path /home/giles/scripts/			# scripts directory
 
 ### set aliases
 alias ls='exa -lha'                 			# expand ls to include detail and color
