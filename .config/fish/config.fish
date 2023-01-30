@@ -26,6 +26,7 @@ alias find='fd'
 alias yt-dlp-audio='yt-dlp -x --audio-format mp3'
 alias cryfs-open='cryfs ~/Tresors/My\ Vault/CryFS/ ~/CryFS/'
 alias cryfs-close='cryfs-unmount "/home/giles/CryFS/"'
+alias cat='bat'						# replace cat with bat
 
 ### starship prompt
 # starship init fish | source
