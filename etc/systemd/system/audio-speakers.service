@@ -1,9 +1,11 @@
 [Unit]
-After=network.target
+Description=fix speaker issue
+After=network-online.target
+Wants=network-online.target
 
 [Service]
+Type=idle
 ExecStart=/usr/local/bin/audio-speakers.sh
 
 [Install]
 WantedBy=default.target
-
