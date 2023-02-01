@@ -60,9 +60,7 @@ screens = [
                     background=colors[0],
                     padding=0,
                     fmt='{}'
-                    #max_chars=10,
                     ),
-                #widget.Spacer(background=colors[0],length=5),
                 widget.Clock(
                     foreground = colors[2],
                     font="TerminessTTF Nerd Font Bold",
@@ -71,7 +69,7 @@ screens = [
                     padding = 0,
                     format = "%A %d %B %H:%M "
                 ),
-                widget.Spacer(background=colors[0],length=400),
+                widget.Spacer(background=colors[0],length=bar.STRETCH),
                 widget.Chord(
                     chords_colors={
                         'launch': ("#ff0000", "#ffffff"),
